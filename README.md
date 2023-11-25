@@ -60,7 +60,7 @@ unzip child-mind-institute-detect-sleep-states.zip
 ### 2. Preprocess data
 
 ```bash
-rye run python run/prepare_data.py -m phase=train,test
+rye run python run/prepare_data.py -m phase=train,test dir=kaggle
 ```
 
 ## Train Model

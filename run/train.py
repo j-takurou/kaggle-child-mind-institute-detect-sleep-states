@@ -10,7 +10,7 @@ from pytorch_lightning.callbacks import (
     RichModelSummary,
     RichProgressBar,
 )
-from pytorch_lightning.loggers import WandbLogger
+from pytorch_lightning.loggers import MLFlowLogger
 
 from src.conf import TrainConfig
 from src.datamodule import SleepDataModule
@@ -46,7 +46,7 @@ def main(cfg: TrainConfig):
     model_summary = RichModelSummary(max_depth=2)
 
     # init experiment logger
-    pl_logger = WandbLogger(
+    pl_logger = MLFlowLogger(
         name=cfg.exp_name,
         project="child-mind-institute-detect-sleep-states",
     )
