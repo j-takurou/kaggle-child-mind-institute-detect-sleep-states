@@ -47,7 +47,7 @@ def main(cfg: TrainConfig):
 
     # init experiment logger
     pl_logger = MLFlowLogger(
-        name=cfg.exp_name,
+        experiment_name=cfg.exp_name,
         project="child-mind-institute-detect-sleep-states",
     )
     pl_logger.log_hyperparams(cfg)
