@@ -56,17 +56,17 @@ labels:
 
 # feature
 features:
-  - "anglez"
+  # - "anglez"
   - "enmo"
   # - "step"
   # - "month_sin"
   # - "month_cos"
   - "hour_sin"
   - "hour_cos"
-  - "anglez_diff"
+  - "anglez_sin_diff"
   # - "minute_sin"
   # - "minute_cos"
-  # - "anglez_sin"
+  - "anglez_sin"
   # - "anglez_cos"
 
 # optimizer
