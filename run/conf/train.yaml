@@ -13,7 +13,7 @@ defaults:
   - _self_
   - dir: local
   - dataset: seg
-  - model: Spec2DCNN
+  - model: DETR2DCNN
   - feature_extractor: CNNSpectrogram
   - decoder: UNet1DDecoder
   - split: fold_0
@@ -22,7 +22,7 @@ seed: 42
 exp_name: dummy
 batch_size: 32
 num_workers: 24
-duration: 5760 # duration * 5 = 秒数
+duration: 12096 # duration * 5 = 秒数
 downsample_rate: 2
 upsample_rate: 1
 
